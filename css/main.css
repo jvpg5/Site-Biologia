@@ -49,20 +49,42 @@ table {
 
 /* -------- fim do reset --------*/
 
+/* Inicio das constantes */
+:root {
+	--azul-escuro: #000724;
+	--azul-padrao: #2759C4;
+	--azul-ciano: #58A9DB;
+	--azul-claro: #DAE2FD;
+	--roxo-escuro: #331952;
+}
+
+/* Fim das constantes */
+
+body {
+	height: 200vh;
+}
+
 #topView {
-    display: flex;
+	position: relative;
+	display: flex;
+	background: rgb(0,7,36);
+background: linear-gradient(180deg, rgba(0,7,36,1) 0%, rgba(0,7,36,1) 93%, rgba(0,7,36,0.5) 100%);
+	height: 105vh;
 }
 
 .spaceVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+	position: relative;
+	z-index: 0;
+    height: 100vh;
+	margin: auto;
+	justify-self: center;
+	align-self: flex-start;
 }
 
 .topTitle {
-    margin: auto;
-    justify-self: center;
-    align-self:  center;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	color: white;
 }
+
