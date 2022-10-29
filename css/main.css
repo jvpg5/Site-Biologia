@@ -143,10 +143,9 @@ main {
 
 .textosContainer {
 	width: 92.1875%;
-	height: 700px;
 	margin: 20px auto;
 	justify-self: center;
-	max-width: 1440px;
+	max-width: 1000px;
 	background-color: white;
 	border-radius: 10px;
 	border: 2px solid var(--azul-escuro);
@@ -193,4 +192,18 @@ main {
 
 #navContainer a:hover {
 	color: var(--azul-ciano);
+}
+
+ /*Textos*/
+.texto h3 {
+	font-size: 1.5rem;
+	margin: 10px;
+	font-weight:500
+}
+.texto p {
+	margin: auto auto 3px auto;
+	text-align: justify;
+	width: 98%;
+	text-indent: 1%;
+	font-weight: normal;
 }
