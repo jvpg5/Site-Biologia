@@ -53,10 +53,11 @@ table {
 
 :root {
 	--azul-escuro: #000724;
-	--azul-padrao: #2759C4;
 	--azul-ciano: #58A9DB;
-	--azul-claro: #DAF2FD;
+	--roxo-claro: #D6D5F2;
 	--roxo-escuro: #331952;
+	--roxo-medio: #444373;
+	--roxo-azulado: #231A69;
 }
 
 /* Configurações inicio*/
@@ -70,10 +71,9 @@ table {
 
 /* body e <a>*/
 body {
-	height: 200vh; /*Tirar isso daqui depois*/
 	overflow-x: hidden;
 	font-family: 'Varta', sans-serif;
-	background-color: var(--azul-claro);
+	background-color: var(--roxo-claro);
 }
 
 a {
@@ -121,6 +121,14 @@ a {
 	text-shadow: 2px 2px var(--azul-escuro);
 }
 
+@media screen and (max-width: 600px){
+	.title{
+		text-align: left;
+		line-height: 1.4;
+		margin-left: 5px;
+	}
+}
+
 	/* Icone para expandir */
 .iconExpand {
 	order: 1;
@@ -163,13 +171,19 @@ main {
 	font-weight: 500;
 }
 
+@media screen and (max-width: 600px){
+	.textosContainer h4 {
+		width:auto;
+	}
+}
+
  /* Nav div */
 #navContainer {
 	display: inline-flex;
 	width: auto;
 	height: auto;
 	border-radius: 10px;
-	border: 4px solid var(--azul-padrao);
+	border: 4px solid var(--roxo-azulado);
 	justify-content: center;
 	align-content: center; 
 	padding: 0 20px 0 30px;
@@ -206,4 +220,46 @@ main {
 	width: 98%;
 	text-indent: 1%;
 	font-weight: normal;
+}
+
+/*Rodapé*/
+
+.rodape {
+width: 100vw;
+height: 150px;
+background-color: var(--roxo-medio);
+display: flex;
+align-content: center;
+justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px){
+	.rodape {
+		height: auto;
+		flex-direction: column;
+		gap: 20px;
+		padding: 10px 0 20px 0;
+	}
+}
+
+.logo {
+	height: 80px;
+	margin: auto;
+}
+
+.footerText {
+	color: rgb(238, 225, 243);
+	font-size: 12px;
+	margin: auto
+}
+
+.footerA {
+	color: var(--azul-ciano);
+	font-size: 12px;
+	text-decoration: underline;
+	margin: auto;
+}
+
+.footerA a:hover {
+	color: var(--roxo-claro);
 }
